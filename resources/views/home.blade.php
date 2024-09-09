@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello Laravel</title>
 </head>
+@include('navbar')
 
 <body>
     <h1>{{ $title }}</h1>
