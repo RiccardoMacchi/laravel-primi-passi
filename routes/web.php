@@ -19,6 +19,8 @@ function genNum(){
         $number = rand(1,100);
         if(!in_array($number,$numbers)){
             $numbers[] = $number;
+        } else {
+            $i--;
         }
     }
     return $numbers;
