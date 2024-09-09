@@ -9,7 +9,17 @@
 </head>
 
 <body>
-    <h1>Hello Laravel</h1>
+    <h1>{{ $title }}</h1>
+
+    <ul>
+        @foreach ($numbers as $number)
+            @if ($number % 2 == 0)
+                <li>Numero Pari: {{ $number }}</li>
+            @else
+                <li>Numero Dispari: {{ $number }}</li>
+            @endif
+        @endforeach
+    </ul>
 </body>
 
 </html>

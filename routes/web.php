@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $title = 'Hello Laravel';
+    $numbers = [2,3,7,19,35,38,49,50];
+
+    return view('home', compact('title','numbers'));
 });
